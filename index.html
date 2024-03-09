@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>online market</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+        integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+
+</head>
+<body>
+    
+    <nav id="top">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fa fa-bars" style="font-size:24px"></i>
+        </label>
+      <label class="logo" id="chu">RAJ LAXMI MART</label>
+      <ul>
+            <li>
+              <div class="search-container">
+                  <input type="text" onkeyup="search_pd()" id='searchbar' name="search" placeholder="search item"
+                      class="search-input">
+                  <button class="microphone-btn" onclick="startSpeechRecognition()">
+                      <i class="fa fa-microphone"></i>
+                  </button>
+              </div>
+          </li>
+        <li class="icon-cart"><i class="bi bi-cart-plus"></i></li>
+        <li class="lab"><a class="active" href="#">HOME</a></li>
+        <li class="lab"><a href="profile.html">Profile</a></li>
+        <li class="lab"><a href="l.html">Log in</a></li>
+        <li><a href="logout.php" class="btn btn-warning">Logout</a></li>
+      </ul>
+  </nav>
+      <img id="image" src="d2.jpg" alt="Image" width="100%" height="500">
+      <br>
+      <div id="productList" class="listProduct">
+
+        </div>
+    </div>
+    <div class="cartTab">
+        <h1>Shopping Cart</h1>
+        <div class="listCart">
+            
+        </div>
+        <div id="totalPrice">Total Price: $0.00</div>
+
+        <div class="btn">
+            <button class="close">CLOSE</button>
+            <button class="checkOut">Check Out</button>
+        </div>
+    </div>
+    <br>
+    <div class="footer">
+        <div class="icons">
+            <a href=" "><i class="bi bi-facebook"></i></a>
+            <i class="bi bi-whatsapp"></i>
+            <i class="bi bi-twitter"></i>
+        </div>
+        <div class="links">
+            <ul class="ma">
+                <li class="cd"><a href="#">HOME</a></li>
+                <li class="cd"><a href="ags.html">CONTACT</a></li>
+                <li class="cd"><a href=" ">FEEDBACK</a></li>
+            </ul>
+
+        </div>
+        <div class="copyright">
+            <bold>&copy;copyright</bold>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
